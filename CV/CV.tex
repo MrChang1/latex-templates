@@ -25,6 +25,8 @@
 % Red
 %\definecolor{color}{RGB}{180,0,0}
 
+% Better logos (left of mail, phone ...)
+\RequirePackage{fontawesome}
 
 % Optionally remove page numbers:
 %\thispagestyle{empty}\pagestyle{empty}
@@ -108,9 +110,12 @@
 \begin{document}
 \cvtitle{John Jimmy Joeson}{color}{BSc, MA}{0.5cm}
 \positionedbox{left}{0.7\textwidth}{%
-	\information{+12 345 6789, +12 345 6789}{pic}{\Telefon}\\%
-	\information{me@mail.com}{pic}{\MVAt}\\%
-	\information{http://www.github.com}{pic}{\Flatsteel}\\%
+	\information{My Address}{pic}{\faHome~}\\%
+	\information{+12 345 6789, +12 345 6789}{pic}{\faPhone~}\\%
+	\information{\ 06.06.06.06.06}{pic}{{\Large\faMobilePhone}~}\\%
+	\information{me@mail.com}{pic}{\faEnvelope~}\\%
+	\information{http://www.github.com}{pic}{\faGithub~}\\%
+	\information{http://me.com}{pic}{\faGlobe~} \\%
 	\information{http://www.twitter.com/username}{pic}{$\mathcal{T}$}\\%
 }
 \positionedbox{right}{0.3\textwidth}{DOB: DD/MM/YY\\Nationality: XYZ}
