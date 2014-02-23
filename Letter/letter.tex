@@ -11,6 +11,21 @@
 \usepackage{wasysym}
 \usepackage{enumitem}
 \usepackage{setspace}
+\usepackage{xcolor}
+% Permet de choisir la couleur
+% Green
+%\definecolor{color}{RGB}{0,120,40}
+% Green2
+%\definecolor{color}{RGB}{40,120,0}
+% Orange
+%\definecolor{color}{RGB}{120,40,0}
+% Blue
+\definecolor{color}{RGB}{0,40,120}
+% Red
+%\definecolor{color}{RGB}{180,0,0}
+
+% Better logos (left of mail, phone ...)
+\RequirePackage{fontawesome}
 
 % Optionally remove page numbers:
 \thispagestyle{empty}\pagestyle{empty}
@@ -57,20 +72,21 @@
 % 					Content					  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\lettertitle{Joe Jimmy Johnson}{BrickRed}{AbC, MSc}{1.0cm}
+\lettertitle{Joe Jimmy Johnson}{color}{AbC, MSc}{1.0cm}
 \positionedbox{left}{0.3\textwidth}{%
-	\information{10, Street Name}{pic}{\Letter}\\
+	\information{10, Street Name}{pic}{\faEnvelope~}\\
 	\information{Area}{space}{~ }\\
 	\information{PostCode}{space}{~ }\\
 	\information{City}{space}{~ }\\
 	\information{Country}{space}{~ }\\
 }
 \positionedbox{right}{0.7\textwidth}{
-	\information{+12 123 4567, +12 123 4567}{rightpic}{\Telefon}\\%
-	\information{me@mail.com}{rightpic}{\MVAt}\\% 
+	\information{+12 345 6789, +12 345 6789}{rightpic}{\faPhone~}\\%
+	\information{\ 06.06.06.06.06}{rightpic}{{\Large\faMobilePhone}~}\\%
+	\information{me@mail.com}{rightpic}{\faEnvelope~}\\%
 	\information{~ }{space}{~ }\\
-	\information{http://mypage.com}{rightpic}{\Flatsteel}\\%
-	\information{http://github.com/}{rightpic}{\Flatsteel}\\%
+	\information{http://www.github.com}{rightpic}{\faGithub~}\\%
+	\information{http://me.com}{rightpic}{ \faGlobe~} \\%
 	}
 \letterheaderseperator{0.3mm}{0.5cm}{0.1cm}
 
