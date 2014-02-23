@@ -11,6 +11,20 @@
 \usepackage{wasysym}
 \usepackage{enumitem}
 \usepackage{setspace}
+\usepackage{xcolor}
+
+% Choose color
+% Green
+%\definecolor{color}{RGB}{0,120,40}
+% Green2
+%\definecolor{color}{RGB}{40,120,0}
+% Orange
+%\definecolor{color}{RGB}{120,40,0}
+% Blue
+\definecolor{color}{RGB}{0,40,120}
+% Red
+%\definecolor{color}{RGB}{180,0,0}
+
 
 % Optionally remove page numbers:
 %\thispagestyle{empty}\pagestyle{empty}
@@ -63,9 +77,11 @@
 
 % \cvsectiontitle{title}: Creates a section with the given title.
 \newcommand{\cvsectiontitle}[1]{%
+	\color{color}
 	\rule{\linewidth}{0.2mm}\\%
 		{\large\indent\textsc{#1}}\\%
 	\\[-6mm]\rule{\linewidth}{0.2mm}\\[2mm]%
+	\color{black}
 	}
 
 % \cvpub{Authors}{Title}{Date}{Journal/Conference}{Pages}: Create a publication entry
@@ -90,7 +106,7 @@
 %                                    Content                                       %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\cvtitle{John Jimmy Joeson}{BrickRed}{BSc, MA}{0.5cm}
+\cvtitle{John Jimmy Joeson}{color}{BSc, MA}{0.5cm}
 \positionedbox{left}{0.7\textwidth}{%
 	\information{+12 345 6789, +12 345 6789}{pic}{\Telefon}\\%
 	\information{me@mail.com}{pic}{\MVAt}\\%
